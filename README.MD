@@ -6,9 +6,9 @@ Här nedan presenteras en översikt över statusen på lösande av uppgfterna.
 | Uppgift                 | Status |
 |:------------------------|:------:|
 | 1. Temperaturomvandling |   🟢   |
-| 2. Lagerhållning        |   🟡   |
-| 3. Bankkonto            |   🔴   |
-| 4. Bibliotek            |   🔴   |
+| 2. Lagerhållning        |   🟢   |
+| 3. Bankkonto            |   🟢   |
+| 4. Bibliotek            |   🟡   |
 
 
 ## 1️⃣ Temperaturomvandling
@@ -16,6 +16,12 @@ Skriv tester med BDD för funktioner som omvandlar temperaturer från Fahrenheit
 Exempel på testfall:
 - Givet temperaturen 32°F, ska funktionen svara 0°C
 - Givet temperaturen 100°C, ska funktionen svara 212°F
+
+### Lösning
+För att köra testerna:
+````python
+behave --tags=@temperatur --no-skipped --format=plain
+````
  
 
 ## 2️⃣ Lagerhållning
@@ -24,6 +30,11 @@ Testa att:
 - Det går att lägga till en valfri produkt: namn och antal är korrekt
 - Det går att minska antalet av en specifik produkt
 
+### Lösning
+För att köra testerna:
+````python
+behave --tags=@lager --no-skipped --format=plain
+````
 
 ## 3️⃣ Bankkonto
 Skriv tester med BDD för ett bankkonto:  
@@ -32,6 +43,12 @@ Skriv tester med BDD för ett bankkonto:
 - ta ut pengar
 - applicera 5% ränta
 - överföra pengar mellan två konton
+
+### Lösning
+För att köra testerna:
+````python
+behave --tags=@bank --no-skipped --format=plain
+````
 
 
 ## 4️⃣ Bibliotek
